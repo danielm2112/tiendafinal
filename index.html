@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiendamiercoles</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+    crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary animate__animated animate__backInLeft" >
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">UCL</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="tienda.html">Tienda</a>
+                  </li>
+                                           
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                  <button class="btn btn-primary" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+      <section>
+        <div></div>
+        <form id="formularioregistro">
+          <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" id="email">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="password" class="form-control" id="password">
+        </div>
+        <button type="submit" class="btn btn-primary w-100" id="botonregistro">Registro</button>
+        </form>
+      </section>
+
+        <section>
+            <div class="container mt-5 mb-3">
+                <div class="row">
+                    <div class="col-8 align-self-center">
+                        <h4 style="color: rgb(0, 4, 7);">UEFA CHAMPIONS LEAGUE</h4>
+                        <p style="color: rgb(5, 99, 170);" class="fw-bold">La Liga de Campeones de la UEFA (en inglés y oficialmente, UEFA Champions League; UCL), conocida en sus orígenes como Copa de Europa, es el torneo internacional oficial de fútbol más prestigioso a nivel de clubes entre los organizados por la Unión de Asociaciones Europeas de Fútbol (UEFA).3Asimismo, es el acontecimiento deportivo anual más seguido en el mundo, con más de 350 millones de espectadores en 2018.
+
+                          Disputada anualmente, fue creada por iniciativa del diario L'Équipe en la temporada 1955-56 bajo la denominación de Copa de Clubes Campeones Europeos (en francés, Coupe des Clubs Champions Européens), con un formato de eliminación directa. Ideada para definir al mejor club del continente, en 1992 el torneo fue reestructurado incorporando por primera vez el formato de competición de liga o fase de grupos como paso previo a la fase eliminatoria. Por ello fue rebautizado con su vigente denominación en la edición 1992-93, consolidando dicho formato. Originalmente, se clasificaban para su participación en el certamen los equipos campeones de las ligas nacionales, pero, en 1997, comenzaron a participar también los subcampeones y, en 1999, los clasificados hasta el cuarto puesto, dependiendo del coeficiente UEFA de cada liga,n. debiendo superar los de menor coeficiente una fase previa.                                          
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <img src="img/champions2.jpg" alt="foto2" class="w-100 img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-5 mb-3">
+              <div class="row">
+                  <div class="col-8 align-self-center">
+                      <h4 style="color: rgb(0, 4, 7);">GOLEADORES</h4>
+                      <p style="color: rgb(5, 99, 170);" class="fw-bold">El máximo goleador del torneo es el portugués Cristiano Ronaldo con 141 goles, seguido del argentino Lionel Messi con 125, el polaco Robert Lewandowski con 85, y el francés Karim Benzema con 79, superando al español Raúl González con 71 tantos, siendo los únicos jugadores en sobrepasar la barrera de los setenta goles en la historia de la competición.                                          
+                      </p>
+                  </div>
+                  <div class="col-4">
+                      <img src="img/champions4.jpg" alt="foto2" class="w-100 img-fluid">
+                  </div>
+              </div>
+          </div>
+        </section>
+    </main>
+    <section>
+      <div class="modal fade" id="mensajeinformativo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p id="mensajemodalinfo"></p>
+            </div>          
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/firebase.js" type="module"></script>
+    <script src="js/registro.js" type="module"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+     crossorigin="anonymous"></script>
+</body>
+</html>
